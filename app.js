@@ -39,3 +39,7 @@ app.use(studentroutes);
 app.use(courseroutes);
 
 app.use(courseRegisterRoutes);
+
+app.use((req, res)=>{
+  res.status(404).render('404')
+})
